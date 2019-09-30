@@ -65,7 +65,6 @@ class Home extends Component {
 
 const matpStateToProps = state => ({
   amount: state.cart.reduce((amount, product) => {
-    console.log("passou aqui");
     amount[product.id] = product.amount;
 
     return amount;
